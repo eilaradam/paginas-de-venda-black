@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lara Dam · UGC Black Friday (v6)</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%23D4FF3A%22/><text x=%2250%22 y=%2268%22 font-size=%2250%22 text-anchor=%22middle%22 font-family=%22Impact%22>27</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--k:#0E0E0E;--l:#D4FF3A;--l2:#BDEB1C;--w:#fff;--off:#F4F4EE;--g:#5f5f5a;--ln:#e0e0d8;--wide:'Unbounded',system-ui,sans-serif;--sans:'DM Sans',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--off);color:var(--k);font-family:var(--sans);font-size:17px;line-height:1.55;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--wide);line-height:1.02;letter-spacing:-.03em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--k);color:var(--l);font:700 15px var(--sans);border-radius:999px;padding:16px 30px;text-decoration:none;border:3px solid var(--k);cursor:pointer;transition:.15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.sec{background:transparent;color:var(--k)}
+.btn.lima{background:var(--l);color:var(--k)}
+.tagp{display:inline-block;background:var(--l);color:var(--k);font:700 12px var(--sans);letter-spacing:.12em;text-transform:uppercase;padding:7px 14px;border-radius:999px;border:2px solid var(--k)}
+/* topo */
+.top{position:sticky;top:0;z-index:30;background:var(--off);border-bottom:3px solid var(--k)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font:900 20px var(--wide);text-decoration:none;letter-spacing:-.04em}
+.logo b{background:var(--l);padding:0 8px;border-radius:8px;margin-left:2px}
+.top nav{display:flex;gap:22px;font-weight:700;font-size:14px}
+.top nav a{text-decoration:none}
+.top nav a:hover{text-decoration:underline;text-decoration-thickness:3px;text-decoration-color:var(--l2)}
+.top .btn{padding:10px 20px;font-size:14px}
+/* hero */
+.hero{padding:56px 0 72px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(38px,6vw,78px);margin:18px 0 22px;font-weight:900}
+.hero h1 mark{background:var(--l);padding:0 .12em;border-radius:.18em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.hero .lead{font-size:20px;color:var(--g);max-width:46ch}
+.acoes{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:34px}
+.stats div{font-size:14px;color:var(--g);line-height:1.25}
+.stats b{display:block;font:900 30px var(--wide);color:var(--k);letter-spacing:-.04em}
+.fotoBox{position:relative;max-width:460px;margin:0 auto;width:100%}
+.fotoBox .disco{position:absolute;inset:6% -8% -4% 8%;background:var(--l);border-radius:50%;border:3px solid var(--k)}
+.fotoBox img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;border-radius:36px;border:3px solid var(--k);display:block}
+.sticker{position:absolute;z-index:2;display:grid;place-content:center;text-align:center;border-radius:50%;border:3px solid var(--k);font-family:var(--wide);font-weight:900;line-height:1}
+.s1{width:118px;height:118px;right:-18px;top:-16px;background:var(--k);color:var(--l);font-size:30px;transform:rotate(12deg);animation:gira 18s linear infinite}
+.s1 small{font:700 10px var(--sans);letter-spacing:.14em;text-transform:uppercase;display:block;margin-top:4px;color:var(--w)}
+.s2{left:-22px;bottom:34px;width:104px;height:104px;background:var(--w);font-size:13px;transform:rotate(-10deg);padding:10px}
+@keyframes gira{to{transform:rotate(372deg)}}
+/* fita */
+.fita{background:var(--l);border-block:3px solid var(--k);overflow:hidden;white-space:nowrap;transform:rotate(-1.5deg);margin:0 -20px}
+.fita div{display:inline-block;padding:14px 0;animation:corre 30s linear infinite;font:800 18px var(--wide);letter-spacing:-.02em}
+.fita span{margin:0 22px}
+.fita span:after{content:"✺";margin-left:44px}
+@keyframes corre{to{transform:translateX(-50%)}}
+section.bl{padding:92px 0 0}
+.cab{margin-bottom:34px;max-width:64ch}
+.cab h2{font-size:clamp(30px,4.6vw,54px);margin:14px 0 14px;font-weight:900}
+.cab p{color:var(--g)}
+/* prazo */
+.contador{background:var(--k);color:var(--w);border-radius:32px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.contador strong{font:800 24px var(--wide);letter-spacing:-.03em;display:block;margin-bottom:6px}
+.contador strong span{color:var(--l)}
+.contador p{color:#c9c9c2;max-width:34ch}
+.tempo{display:flex;gap:12px}
+.tempo div{background:var(--l);color:var(--k);border-radius:20px;padding:14px 8px;min-width:84px;text-align:center}
+.tempo b{display:block;font:900 44px/1 var(--wide);font-variant-numeric:tabular-nums;letter-spacing:-.05em}
+.tempo span{font:700 11px var(--sans);text-transform:uppercase;letter-spacing:.14em}
+.linha{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.etapa{background:var(--w);border:3px solid var(--k);border-radius:26px;padding:22px;position:relative}
+.etapa i{position:absolute;top:-16px;left:18px;width:34px;height:34px;border-radius:50%;background:var(--l);border:3px solid var(--k);display:grid;place-items:center;font:900 14px var(--wide);font-style:normal}
+.etapa:nth-child(1) i:after{content:"1"}.etapa:nth-child(2) i:after{content:"2"}.etapa:nth-child(3) i:after{content:"3"}.etapa:nth-child(4) i:after{content:"4"}
+.etapa small{display:block;font:700 12px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--g);margin-top:8px}
+.etapa b{display:block;font:800 20px var(--wide);letter-spacing:-.03em;margin:6px 0}
+.etapa span{font-size:15px;color:var(--g)}
+.etapa.fim{background:var(--l)}
+.etapa.fim small,.etapa.fim span{color:var(--k)}
+/* videos */
+.videos{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.vid{aspect-ratio:9/16;border-radius:30px;border:3px solid var(--k);background:var(--k);position:relative;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;justify-content:flex-end}
+.vid img,.vid video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vid::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(0,0,0,.82));pointer-events:none}
+.vid .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:62px;height:62px;border-radius:50%;background:var(--l);border:3px solid var(--k);display:grid;place-items:center;font-size:18px;padding-left:4px;z-index:2;color:var(--k)}
+.vid .leg{position:relative;z-index:2;padding:16px;color:#fff}
+.vid .leg small{display:inline-block;background:var(--l);color:var(--k);font:700 11px var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+.vid .leg b{display:block;font:800 18px var(--wide);letter-spacing:-.03em;margin-top:8px}
+.vid .leg em{font-style:normal;font-size:13px;opacity:.9}
+.vid.on::after,.vid.on .play,.vid.on img,.vid.on .leg{display:none}
+.vid.on video{z-index:3}
+/* comparacao */
+.dor{display:grid;grid-template-columns:1fr 1fr;gap:18px;position:relative}
+.dor>div{border:3px solid var(--k);border-radius:30px;padding:30px}
+.dor h3{font:800 22px var(--wide);margin-bottom:16px;letter-spacing:-.03em}
+.dor ul{list-style:none;padding:0;display:grid;gap:12px}
+.dor li{padding-left:34px;position:relative}
+.dor li:before{position:absolute;left:0;top:1px;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font:900 13px var(--sans)}
+.ruim{background:var(--w);color:var(--g)}
+.ruim li:before{content:"✕";background:var(--ln);color:var(--k)}
+.ruim li{text-decoration:line-through;text-decoration-color:#bbb}
+.bom{background:var(--l)}
+.bom li:before{content:"✓";background:var(--k);color:var(--l)}
+.dor:after{content:"VS";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:var(--k);color:var(--l);display:grid;place-items:center;font:900 18px var(--wide);border:3px solid var(--off)}
+/* pacotes */
+.pacotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+.pac{background:var(--w);border:3px solid var(--k);border-radius:32px;padding:30px;display:flex;flex-direction:column;position:relative}
+.pac h3{font:900 28px var(--wide);letter-spacing:-.04em}
+.pac .pra{color:var(--g);font-size:15px;margin:8px 0 18px;min-height:46px}
+.pac .preco{font:900 40px var(--wide);letter-spacing:-.05em;margin-bottom:16px}
+.pac .preco small{font:500 14px var(--sans);letter-spacing:0;color:var(--g)}
+.pac ul{list-style:none;padding:0;display:grid;gap:10px;margin-bottom:24px;flex:1}
+.pac li{padding-left:28px;position:relative;font-size:15px}
+.pac li:before{content:"✓";position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;background:var(--l);border:2px solid var(--k);display:grid;place-items:center;font:900 11px var(--sans)}
+.pac.dest{background:var(--l);transform:translateY(-14px)}
+.pac.dest li:before{background:var(--k);color:var(--l)}
+.pac .tag{position:absolute;top:-16px;right:24px;background:var(--k);color:var(--l);font:700 12px var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
+.pac .btn{width:100%}
+.pac.dest .btn{background:var(--k);color:var(--l)}
+.nota{margin-top:26px;font-size:14px;color:var(--g);max-width:70ch}
+/* faq */
+.faq{display:grid;gap:12px}
+details{background:var(--w);border:3px solid var(--k);border-radius:24px;padding:0 24px}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:20px 0;font:800 18px var(--wide);letter-spacing:-.03em}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";flex:none;width:34px;height:34px;border-radius:50%;background:var(--l);border:3px solid var(--k);display:grid;place-items:center;font:900 20px var(--sans);transition:.2s}
+details[open] summary:after{content:"−";background:var(--k);color:var(--l)}
+details p{padding:0 0 22px;color:var(--g);max-width:68ch}
+/* cta */
+.cta{margin:92px 0 0;background:var(--l);border:3px solid var(--k);border-radius:44px;padding:64px 28px;text-align:center}
+.cta .limite{font:700 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+.cta h2{font-size:clamp(34px,6vw,76px);font-weight:900;max-width:14ch;margin:0 auto 16px}
+.cta p{max-width:52ch;margin:0 auto 28px}
+.cta .btn{font-size:17px;padding:18px 36px}
+footer{text-align:center;padding:44px 24px 110px;font-size:14px;color:var(--g)}
+.fixo{position:fixed;left:0;right:0;bottom:0;background:var(--k);color:#fff;display:flex;align-items:center;justify-content:center;gap:20px;padding:11px 16px;z-index:40;transform:translateY(110%);transition:.3s}
+.fixo.on{transform:none}
+.fixo span{font-size:14px;line-height:1.2}
+.fixo b{display:block;color:var(--l);font:800 18px var(--wide)}
+.fixo .btn{background:var(--l);color:var(--k);border-color:var(--l);padding:11px 22px;font-size:14px}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;padding-top:36px}
+  .fotoBox{max-width:360px}
+  .linha{grid-template-columns:1fr 1fr;row-gap:28px}
+  .videos{grid-template-columns:repeat(4,70%);overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -24px;padding:0 24px 8px}
+  .vid{scroll-snap-align:start}
+  .pacotes{grid-template-columns:1fr}
+  .pac.dest{transform:none}
+  .dor{grid-template-columns:1fr}
+  .dor:after{display:none}
+  .top nav{display:none}
+  .tempo div{min-width:68px}.tempo b{font-size:32px}
+}
+@media(max-width:520px){.linha{grid-template-columns:1fr}.contador{padding:24px}}
+@media(prefers-reduced-motion:reduce){.fita div,.s1{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#">Lara<b>Dam</b></a>
+  <nav><a href="#prazo">Prazo</a><a href="#videos">Vídeos</a><a href="#pacotes">Pacotes</a><a href="#duvidas">Dúvidas</a></nav>
+  <a class="btn" href="#contato">Garantir vaga</a>
+</div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <span class="tagp">Vagas limitadas · Black Friday 27/11</span>
+      <h1>Seu criativo <mark>pronto</mark> antes da Black.</h1>
+      <p class="lead">Vídeos UGC que parecem de gente real e vendem como anúncio. Roteiro, gravação e edição por pacote fechado, com prazo e uso de imagem combinados por escrito.</p>
+      <div class="acoes"><a class="btn lima" href="#pacotes" style="color:var(--k)">Escolher meu pacote</a><a class="btn sec" href="#videos">Ver vídeos reais</a></div>
+      <div class="stats"><div><b>10,6 mil</b>views no maior vídeo</div><div><b>7,1 mil</b>views em vídeo de Black</div><div><b>9</b>marcas no portfólio</div></div>
+    </div>
+    <div class="fotoBox">
+      <div class="disco"></div>
+      <img src="../black-media/lara.jpeg" alt="Lara Dam, criadora UGC">
+      <div class="sticker s1">27.11<small>Black Friday</small></div>
+      <div class="sticker s2">criadora UGC</div>
+    </div>
+  </div>
+</main>
+
+<div class="fita" aria-hidden="true"><div><span>BF Colchões</span><span>Ateliê</span><span>Lemon Cash</span><span>DT3 Office</span><span>Inglot</span><span>Gamma</span><span>Vozo AI</span><span>Creamy</span><span>Tuyo Brasil</span><span>BF Colchões</span><span>Ateliê</span><span>Lemon Cash</span><span>DT3 Office</span><span>Inglot</span><span>Gamma</span><span>Vozo AI</span><span>Creamy</span><span>Tuyo Brasil</span></div></div>
+
+<main class="wrap">
+  <section class="bl" id="prazo" style="padding-top:72px">
+    <div class="contador" aria-live="polite">
+      <div><strong>Prazo pra fechar: <span id="limiteTxt"></span></strong><p>Depois dessa data o anúncio perde dias de teste e otimização antes da Black.</p></div>
+      <div class="tempo">
+        <div><b id="d">00</b><span>dias</span></div><div><b id="h">00</b><span>horas</span></div>
+        <div><b id="m">00</b><span>min</span></div><div><b id="s">00</b><span>seg</span></div>
+      </div>
+    </div>
+    <div class="cab" style="margin-top:64px"><span class="tagp">Por que fechar agora</span><h2>Anúncio de Black precisa rodar antes da data.</h2><p>O algoritmo precisa de dias pra aprender. Quem pede em cima da hora paga mais caro no anúncio e recebe pior.</p></div>
+    <div class="linha">
+      <div class="etapa"><i></i><small>Até <span class="dt" data-off="-26"></span></small><b>Fechamos</b><span>Pacote escolhido e tudo combinado por escrito.</span></div>
+      <div class="etapa"><i></i><small>Até <span class="dt" data-off="-22"></span></small><b>Eu gravo</b><span>Roteiro aprovado e vídeos gravados e editados com o seu produto.</span></div>
+      <div class="etapa"><i></i><small>Até <span class="dt" data-off="-18"></span></small><b>Começa a anunciar</b><span>Material pronto e já rodando como anúncio.</span></div>
+      <div class="etapa fim"><i></i><small>27/11</small><b>Black Friday</b><span>Quase 3 semanas de anúncio rodando e otimizando antes da data.</span></div>
+    </div>
+  </section>
+
+  <section class="bl" id="videos">
+    <div class="cab"><span class="tagp">Prova real</span><h2>Vídeos que já foram pro ar</h2><p>Marcas reais e números do Instagram. Toque no vídeo pra assistir com som.</p></div>
+    <div class="videos">
+      <div class="vid" data-v="../black-media/DSFvE1JkQCi.mp4"><img src="../black-media/DSFvE1JkQCi.webp" alt=""><div class="play">▶</div><div class="leg"><small>Black Friday</small><b>BF Colchões</b><em>7,1 mil views</em></div></div>
+      <div class="vid" data-v="../black-media/DWPVV24RIF5.mp4"><img src="../black-media/DWPVV24RIF5.webp" alt=""><div class="play">▶</div><div class="leg"><small>Produto em uso</small><b>Ateliê</b><em>6,8 mil views</em></div></div>
+      <div class="vid" data-v="../black-media/DZP-u0lRVVr.mp4"><img src="../black-media/DZP-u0lRVVr.webp" alt=""><div class="play">▶</div><div class="leg"><small>Depoimento</small><b>Lemon Cash</b><em>6,1 mil views</em></div></div>
+      <div class="vid" data-v="../black-media/DUtk0aqkTSe.mp4"><img src="../black-media/DUtk0aqkTSe.webp" alt=""><div class="play">▶</div><div class="leg"><small>Ambiente e produto</small><b>DT3 Office</b><em>10,6 mil views</em></div></div>
+    </div>
+  </section>
+
+  <section class="bl">
+    <div class="cab"><span class="tagp">A escolha certa</span><h2>Banner de loja ou gente de verdade falando do seu produto?</h2></div>
+    <div class="dor">
+      <div class="ruim"><h3>Criativo genérico</h3><ul><li>Parece anúncio e o público rola pra frente</li><li>Mesmo vídeo pra todo mundo, sem prova real</li><li>Sem tempo pra testar variações</li></ul></div>
+      <div class="bom"><h3>Vídeo UGC da Lara</h3><ul><li>Cara de recomendação de amiga, o público para pra ver</li><li>Produto em uso, mostrando como é de verdade</li><li>Mais de um vídeo por pacote, pra você testar o que converte</li></ul></div>
+    </div>
+  </section>
+
+  <section class="bl" id="pacotes">
+    <div class="cab"><span class="tagp">Pacotes de Black</span><h2>Escolha pelo seu objetivo</h2><p>Quanto mais vídeos no pacote, menor o valor de cada um. O vídeo avulso continua com o preço de sempre.</p></div>
+    <div class="pacotes">
+      <div class="pac"><h3>Teste</h3><p class="pra">Pra quem quer provar o formato antes de investir mais.</p><div class="preco">R$ ---<small> / pacote</small></div>
+        <ul><li>0 vídeos UGC</li><li>1 rodada de ajuste</li><li>Entrega em 0 dias</li><li>Uso orgânico</li></ul>
+        <a class="btn sec" href="#contato">Quero testar</a></div>
+      <div class="pac dest"><span class="tag">Mais pedido</span><h3>Campanha</h3><p class="pra">Pra quem vai rodar anúncio na Black e quer variações pra testar.</p><div class="preco">R$ ---<small> / pacote</small></div>
+        <ul><li>0 vídeos UGC com ganchos diferentes</li><li>2 rodadas de ajuste</li><li>Entrega em 0 dias</li><li>Uso orgânico + anúncio por 30 dias</li></ul>
+        <a class="btn" href="#contato">Quero este</a></div>
+      <div class="pac"><h3>Escala</h3><p class="pra">Pra quem quer dominar a Black com volume e entrega prioritária.</p><div class="preco">R$ ---<small> / pacote</small></div>
+        <ul><li>0 vídeos UGC, vários formatos</li><li>Entrega prioritária</li><li>Ajustes combinados no briefing</li><li>Uso orgânico + anúncio por 60 dias</li></ul>
+        <a class="btn sec" href="#contato">Quero escalar</a></div>
+    </div>
+    <p class="nota">Uso de imagem em anúncio pago é separado do orgânico e tem prazo definido. Está descrito em cada pacote e nunca fica de fora do combinado.</p>
+  </section>
+
+  <section class="bl" id="duvidas">
+    <div class="cab"><span class="tagp">Antes de fechar</span><h2>Perguntas que toda marca faz</h2></div>
+    <div class="faq">
+      <details><summary>Como funciona o pagamento?</summary><p>Tudo fica por escrito antes de eu gravar: entregáveis, prazo, rodadas de ajuste, uso de imagem, forma de pagamento e nota fiscal.</p></details>
+      <details><summary>Posso usar o vídeo em anúncio?</summary><p>Pode. O uso em anúncio pago é combinado à parte do orgânico, com prazo definido, e já vem descrito em cada pacote.</p></details>
+      <details><summary>E se o produto atrasar?</summary><p>Sem produto, sem gravação. Se o envio atrasar, o prazo corre junto e eu aviso com foto pra combinarmos um novo envio.</p></details>
+      <details><summary>Aceita permuta?</summary><p>Só quando o produto compensa o valor do trabalho. Pra produto de valor alto, conversamos. Pra produto de baixo valor, o pagamento em dinheiro continua valendo.</p></details>
+      <details><summary>Qual pacote escolher?</summary><p>Se vai rodar anúncio, o Campanha. Se quer só conhecer meu trabalho, o Teste. Se me contar seu orçamento e seu objetivo, eu indico o que cabe.</p></details>
+    </div>
+  </section>
+
+  <section class="cta" id="contato">
+    <p class="limite">Prazo pra fechar: <span class="limiteTxt2"></span></p>
+    <h2>Vamos garantir a sua Black?</h2>
+    <p>Me conta o produto e o seu orçamento. Eu te respondo com o pacote que cabe e o que dá pra entregar até a Black.</p>
+    <a class="btn" href="#contato" onclick="return false">Chamar a Lara · em breve</a>
+  </section>
+</main>
+<footer>Lara Dam · Criadora UGC · Black Friday 2026</footer>
+<div class="fixo" id="fixo"><span><b id="fx">00 dias</b>pra fechar a sua vaga</span><a class="btn" href="#contato">Garantir vaga</a></div>
+
+<script>
+document.querySelectorAll('.vid').forEach(function(v){
+  v.addEventListener('click',function(){
+    var j=v.querySelector('video');
+    if(j){ j.paused?j.play():j.pause(); return; }
+    document.querySelectorAll('.vid video').forEach(function(o){ o.pause(); });
+    var el=document.createElement('video'); el.src=v.dataset.v; el.controls=true; el.playsInline=true; el.autoplay=true;
+    v.classList.add('on'); v.appendChild(el);
+  });
+});
+(function(){
+  /* Ajuste aqui: BLACK é a data da Black Friday; LIMITE é o último dia pra fechar (1º de novembro). */
+  var BLACK = new Date('2026-11-27T00:00:00-03:00');
+  var LIMITE = new Date(BLACK.getTime() - 26*86400000);
+  var MES = ['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+  function fmt(d){ return d.getDate() + ' de ' + MES[d.getMonth()]; }
+  function p(n){ return String(n).padStart(2,'0'); }
+  document.getElementById('limiteTxt').textContent = fmt(LIMITE);
+  document.querySelector('.limiteTxt2').textContent = fmt(LIMITE);
+  document.querySelectorAll('.dt').forEach(function(e){ e.textContent = fmt(new Date(BLACK.getTime() + Number(e.dataset.off)*86400000)); });
+  function tick(){
+    var t = Math.max(0, LIMITE - new Date()), s = Math.floor(t/1000), dias = Math.floor(s/86400);
+    document.getElementById('d').textContent = p(dias);
+    document.getElementById('h').textContent = p(Math.floor(s%86400/3600));
+    document.getElementById('m').textContent = p(Math.floor(s%3600/60));
+    document.getElementById('s').textContent = p(s%60);
+    document.getElementById('fx').textContent = dias + (dias === 1 ? ' dia' : ' dias');
+  }
+  tick(); setInterval(tick, 1000);
+  var fx=document.getElementById('fixo');
+  addEventListener('scroll',function(){ fx.classList.toggle('on', scrollY>700); },{passive:true});
+})();
+</script>
+</body>
+</html>
